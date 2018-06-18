@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyBLjXfCdeKVr9R0RUduvlqjLgu9ktcl4nY",
+    authDomain: "heroes-pulsar.firebaseapp.com",
+    databaseURL: "https://heroes-pulsar.firebaseio.com",
+    projectId: "heroes-pulsar",
+    storageBucket: "heroes-pulsar.appspot.com",
+    messagingSenderId: "202794796146"
+  }
 };
 
 /*

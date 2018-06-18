@@ -1,0 +1,8 @@
+<h1>Classes</h1>
+<ul>
+  <li *ngFor="let class of classes$ | async">
+    <a [routerLink]="['/classes', class.name]"> {{ class.name }} </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

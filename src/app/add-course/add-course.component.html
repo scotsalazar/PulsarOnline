@@ -1,0 +1,67 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="row">
+    <table class="table table-bg">
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <label>id</label>
+            <input type="text" class="form-control" placeholder="Add id" [(ngModel)]="item.id" name="id">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Add name" [(ngModel)]="item.name" name="name">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <label>Description</label>
+            <input type="text" class="form-control" placeholder="Add description" [(ngModel)]="item.description" name="description">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <label>Category</label>
+            <input type="text" class="form-control" placeholder="Add category" [(ngModel)]="item.category" name="category">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <label>Seq No</label>
+            <input type="text" class="form-control" placeholder="Add seqno" [(ngModel)]="item.seqno" name="seqno">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <label>Createdate</label>
+            <input type="text" class="form-control" placeholder="Add createdate" [(ngModel)]="item.createdate" name="createdate">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <label>isactive</label>
+            <input type="text" class="form-control" placeholder="Add isactive" [(ngModel)]="item.isactive" name="isactive">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="float-right">
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>

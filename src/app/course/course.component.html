@@ -1,0 +1,32 @@
+<div class="mt-2 mb-2">
+  <button type="button" [routerLink]="['/add-course']" class="btn btn-primary">Add Course
+  </button>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Seq No</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Created Date</th>
+        <th>#</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{ item.id }}</td>
+          <td>{{ item.seqno }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.category }}</td>
+          <td>{{ item.createdate }}</td>
+          <td>
+            <i [routerLink]="['/add-course', item.id]" class="fas fa-edit"></i>
+            <i (click)="deleteCourse(item); false" class="fas fa-trash"></i>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+  
+</div>
