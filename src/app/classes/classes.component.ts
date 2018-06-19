@@ -18,8 +18,8 @@ export class ClassesComponent implements OnInit {
   // classes: Observable<Class[]>;
   classes: Class[];
 
-  // constructor(private afs: AngularFirestore) {
-  constructor(private classService: ClassService) {
+  constructor(private afs: AngularFirestore) {
+  // constructor(private classService: ClassService) {
     // this.classes = this.afs.collection('classes').snapshotChanges().pipe(map(changes => {
     //   return changes.map(a => {
     //     const data = a.payload.doc.data() as Class;
@@ -30,13 +30,13 @@ export class ClassesComponent implements OnInit {
    }
 
   ngOnInit() {
-    // this.classes$ = this.afs.collection('classes').valueChanges();
-    this.classService.getClass().subscribe(classes => {
-      console.log(classes);
-      this.classes = classes;
-    })
-    
-    
+    this.classes$ = this.afs.collection('classes').valueChanges();
+    // this.classService.getClass().subscribe(classes => {
+    //   console.log(classes);
+    //   this.classes = classes;
+    // })
+    // This code was modified by Branch
+    //
   }
 
 }
